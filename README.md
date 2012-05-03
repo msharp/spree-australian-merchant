@@ -1,21 +1,28 @@
-SpreeAustralianMerchant
-=======================
+# SpreeAustralianMerchant
 
-Introduction goes here.
+Several times I have battled with the Spree configuration to setup a shop for an australian merchant.
+
+This extension provides a rake task for quick configuration of GST, adds an Australian zone, and inserts the Asutralian states and territories.
 
 
-Example
-=======
+## Example
 
-Example goes here.
+Add it to your Gemfile
 
-Testing
--------
+  gem 'spree_australian_merchant', :git => 'git@github.com:msharp/spree-australian-merchant.git'
 
-Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
+Then run `bundle install`.
 
-    $ bundle
-    $ bundle exec rake test_app
-    $ bundle exec rspec spec
+You will now have a rake task available
 
-Copyright (c) 2012 [name of extension creator], released under the New BSD License
+  bundle exec rake spree:australian_merchant:configure
+
+## Testing
+
+Not yet.
+
+## Todo
+
+Some view overrides which show the component on the sale which is GST
+
+
